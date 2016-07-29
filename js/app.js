@@ -21,12 +21,26 @@ $(document).ready(function() {
      .mouseup(function(){
      	$('.ryu-ready').show();
      	$('.ryu-throwing').hide();
-     	
+     	});
 
-     });
+     	
+		$("body").keydown(function(e) {
+			if(e.which == 88){
+				//alert("key down");
+				$(".ryu-cool").show();
+				$(".ryu-still").hide();
+
+			}
+		})
+		.keyup(function(e) {
+				$(".ryu-still").show();
+				$(".ryu-cool").hide();
+
+		});
+     
 });
 function playHadouken() {
-    $('#hadouken-sound')[0].volume = 0.5;
+    $('#hadouken-sound')[0].volume = 1.0;
     $('#hadouken-sound')[0].load();
     $('#hadouken-sound')[0].play();
 }
