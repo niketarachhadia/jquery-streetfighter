@@ -57,4 +57,20 @@ body {
 
 }
 
+.p1,.p2{
+	font-size: 30px;
+	width :250px;
+	//display: block;
+	position: absolute;
+}
+ 
+ .p1{
+ 	left: 580px;
+ 	top: 50px;
+ }
+
+ .p2{
+ 	left: 900px;
+ 	top: 230px;
+ }
 

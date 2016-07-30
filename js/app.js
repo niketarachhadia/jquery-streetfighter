@@ -29,7 +29,7 @@ $(document).ready(function() {
 				//alert("key down");
 				$(".ryu-cool").show();
 				$(".ryu-still").hide();
-
+				$('.ryu-ready').hide();
 			}
 		})
 		.keyup(function(e) {
