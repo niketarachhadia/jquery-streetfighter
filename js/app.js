@@ -24,12 +24,12 @@ $(document).ready(function() {
      	});
 
      	
-		$("*").keydown(function(e) {
+		$("body").keydown(function(e) {
 			if(e.which == 88){
 				//alert("key down");
 				$(".ryu-cool").show();
 				$(".ryu-still").hide();
-
+				$('.ryu-ready').hide();
 			}
 		})
 		.keyup(function(e) {
