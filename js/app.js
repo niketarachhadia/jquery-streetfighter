@@ -24,7 +24,7 @@ $(document).ready(function() {
      	});
 
      	
-		$("body").keydown(function(e) {
+		$("*").keydown(function(e) {
 			if(e.which == 88){
 				//alert("key down");
 				$(".ryu-cool").show();
